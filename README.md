@@ -1,5 +1,25 @@
 # MelbDjango School Lesson Three
 
+HEY FINN
+
+You need to set up a virtualenv...
+
+# Create our virtualenv
+$ python3 -m venv mds
+
+# Activate virtualenv
+$ source mds/bin/activate
+
+# Install Django
+$ pip install -U Django
+
+# Start our first project
+$ django-admin startproject lesson_one
+
+# Go in to the lesson_one directory
+$ cd lesson_one
+
+
 **Important:** Please take the [survey](https://docs.google.com/a/acommoncreative.com/forms/d/1VKqD1-aVsgztk19kdluNtFyTGiarbV9LgBFi2BwYT-g/viewform?c=0&w=1) if you came to the class today.
 
 The slides for this lesson are [available online](https://melbdjango.github.io/lesson-three/).
