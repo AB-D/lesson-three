@@ -6,17 +6,17 @@
   <body>
     <div class="container">
       <ul class="nav">
-        <li><a href="{% url 'entries' %}"class="active">Entries</a></li>
+        <li><a href="{% url 'entries' %}">Entries</a></li>
         <li><a href="{% url 'clients' %}">Clients</a></li>
-        <li><a href="{% url 'projects' %}">Projects</a></li>
+        <li><a href="{% url 'projects' %}"class="active">Projects</a></li>
         <li><a href="{% url 'summary' %}">Summary</a></li>
 
       </ul>
 
-      <h2>Entries</h2>
+      <h2>Projects</h2>
       <ul>
-        {% for entry in entry_list %}
-        <li>{{ entry.description }} </li>
+        {% for project in project_list %}
+        <li>{{ project.name }}</li>
         {% endfor %}
       </ul>
     </div>

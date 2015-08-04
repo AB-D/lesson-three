@@ -1,0 +1,31 @@
+<!doctype>
+<html>
+  <head>
+    <title>Summary</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  </head>
+  <body>
+    <table class="table">
+      <tr>
+        <th>Client</th>
+        <th>Project</th>
+        <th>Start</th>
+        <th>Stop</th>
+        <th></th>
+      </tr>
+
+      {% for entry  in summary_all %}
+        <tr>
+          <td>{{ entry.project.client }}</td>
+          <td>{{ entry.project.name }}</td>
+          <td>{{ entry.start }}</td>
+          <td>{{ entry.stop }}</td>
+          <td>{{ entry.description }}</td>
+
+        </tr>
+      {% endfor %}
+    </table>
+  </body>
+
+</html>
+
